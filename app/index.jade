@@ -1,31 +1,105 @@
 doctype html
 html(lang='ru')
-    head
-        meta(charset='UTF-8')
-        title Document
-        link(rel='stylesheet', href='css/libs.min.css')
-        link(rel='stylesheet', href='css/main.css')
-    body
-        .container
-            .row
-                .col-xs-4
-                    figure
-                        img(src='http://lorempixel.com/400/400/nature')
-                        p.
-                            Товарищи! начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации соответствующий условий активизации. Повседневная практика показывает, что новая модель организационной деятельности позволяет оценить значение дальнейших направлений развития. Разнообразный и богатый опыт консультация с широким активом играет важную роль в формировании существенных финансовых и административных условий. Значимость этих проблем настолько очевидна, что рамки и место обучения кадров требуют от нас анализа позиций, занимаемых участниками в отношении поставленных задач.
-                .col-xs-4
-                    figure
-                        img(src='http://lorempixel.com/400/400/nature')
-                        p.
-                            Товарищи! начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации соответствующий условий активизации. Повседневная практика показывает, что новая модель организационной деятельности позволяет оценить значение дальнейших направлений развития. Разнообразный и богатый опыт консультация с широким активом играет важную роль в формировании существенных финансовых и административных условий. Значимость этих проблем настолько очевидна, что рамки и место обучения кадров требуют от нас анализа позиций, занимаемых участниками в отношении поставленных задач.
+	head
+		meta(charset='UTF-8')
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		title Document
+		link(rel='stylesheet', href='css/libs.min.css')
+		link(rel='stylesheet', href='css/main.css')
+	body
+		header
+			nav.navbar.navbar-default.navbar-fixed-top.default( role="navigation" )
+				.container
+					.navbar-header
+						button.navbar-toggle.collapsed( type="button", data-toggle="collapse", data-target="#navbar-inverse", aria-expanded="false", aria-controls="navbar")
+							span.sr-only Toggle navigation
+							span.icon-bar
+							span.icon-bar
+							span.icon-bar
+					#navbar-inverse.collapse.navbar-collapse.navbar-right
+						ul.nav.navbar-nav
+							li: a( href="#") Главная
+							li: a( href="#about" ) Услуги
+							li: a( href="#contact" ) Цены
+							li: a( href="#contact" ) Контакты
+			.container
+				.row
+					.col-sm-6
+						a(href='/')
+							img(src='img/logo.png', alt='Портфолио Дениса Фролова')
+					.col-sm-6
+						.div-social
+							.social
+								a(href='https://vk.com/denisfrolov86', target='_blank')
+									img(src='img/social/vk.png', alt='')
+								a(href='https://ok.ru/profile/573726782099', target='_blank')
+									img(src='img/social/ok.png', alt='')
+								a(href='https://www.facebook.com/profile.php?id=100002212612913', target='_blank')
+									img(src='img/social/fb.png', alt='')
+								a(href='https://vk.com/denisfrolov86', target='_blank')
+									img(src='img/social/tw.png', alt='')
+
+				h1 Последние работы
+				.owl-carousel.owl-theme
+					.col
+						img(src='img/brauser-top.png')
+						a(href='img/carusel/1.png')
+							img(src='img/carusel/1.png')
+						img(src='img/brauser-bottom.png')
+					.col
+						img(src='img/brauser-top.png')
+						a(href='img/carusel/2.png')
+							img(src='img/carusel/2.png')
+						img(src='img/brauser-bottom.png')
+					.col
+						img(src='img/brauser-top.png')
+						a(href='img/carusel/3.png')
+							img(src='img/carusel/3.png')
+						img(src='img/brauser-bottom.png')
+					.col
+						img(src='img/brauser-top.png')
+						a(href='img/carusel/1.png')
+							img(src='img/carusel/1.png')
+						img(src='img/brauser-bottom.png')
+		section.parallax-window
+			.container
+				.row
+					.col-md-4
+						figure.box
+							h2 Создание сайтов
+							img(src='img/html_css.jpg').pull-left.thumbnail
+							p.
+								Разрабатываю сайты любой сложности, от сайтов визиток до интернет-магазинов. Использую в работе адаптивную, кроссбраузерную                                   верстку, при которой сайт будет удобно просматриваться на любом устройстве, включая смартфоны и планшеты. Использую самые                                     новейшие технологии (html5, css3, Jquary).
+							div.bt
+								a(href='/').btn Подробнее
+					.col-md-4
+						figure.box
+							h2 Продвижение сайтов
+							img(src='img/seo.jpg').pull-left.thumbnail
+							p.
+								Огромную роль играет продвижение сайта. От этого фактора зависит прибыль вашего проекта. В первую очередь важна seo оптимизация                               . Если к этому вопросу подойти максимально ответственно, то продвигаемый сайт будет отображаться на первых позициях поисковых                                 систем. Хорошо раскрученный сайт может приносить большую прибыль его владельцу.
+							div.bt
+								a(href='/').btn Подробнее
+					.col-md-4
+						figure.box
+							h2 Наполнение сайтов
+							img(src='img/content.jpg').pull-left.thumbnail
+							p.
+								Ни что не стоит на месте. Так же и сайт требует регулярного обновления (добавление новых статей, изменение дизайна). Сайт должен развиваться параллельно вашему проекту.
+							div.bt
+								a(href='/').btn Подробнее
+
+		footer
+			.container
+				.row
+					.col-md-6
+						h2 Контактная информация
+						p.
+							Здесь будет какая-то полезная информация
+
+					.col-md-6
 
 
-                .col-xs-4
-                    figure
-                        img(src='http://lorempixel.com/400/400/nature')
-                        p.
-                            Товарищи! начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации соответствующий условий активизации. Повседневная практика показывает, что новая модель организационной деятельности позволяет оценить значение дальнейших направлений развития. Разнообразный и богатый опыт консультация с широким активом играет важную роль в формировании существенных финансовых и административных условий. Значимость этих проблем настолько очевидна, что рамки и место обучения кадров требуют от нас анализа позиций, занимаемых участниками в отношении поставленных задач.
-
-        script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
-        script(src='js/libs.min.js')
-        script(src='js/common.js')
+		script(src='libs/jquery/dist/jquery.min.js')
+		script(src='js/libs.min.js')
+		script(src='js/common.js')

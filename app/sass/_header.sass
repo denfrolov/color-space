@@ -1,3 +1,45 @@
 @import "vars"
 
 /*==========  Header_css  ==========*/
+header
+  background: $accent
+  padding-top: 25px
+  .navbar
+    padding: 25px 0
+    background: none
+    border: none
+    transition: 0.3s linear
+    .navbar-nav
+      li
+        a, a:visited
+          color: #fff
+          font-size: 18px
+          font-weight: bold
+          text-transform: uppercase
+          &:hover, &:focus
+            color: #fff
+            text-decoration: underline
+  .fixed
+    background: $accent
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5)
+    padding: 5px 0
+  .social
+    height: 60px
+    float: right
+    margin-top: 80px
+    a
+      display: table-cell
+      text-align: right
+      vertical-align: middle
+      width: 70px
+      height: 60px
+    img
+      width: 50px
+      &:hover
+        width: 60px
+        position: relative
+        left: 5px
+  h1
+    text-align: center
+    color: #fff
+    text-transform: uppercase
