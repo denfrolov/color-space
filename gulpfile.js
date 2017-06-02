@@ -44,7 +44,7 @@ gulp.task('scripts', function() {
 		'app/libs/scroll.js',
 		'app/libs/owl.carousel/dist/owl.carousel.min.js',
 		'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
-		'app/libs/Parallax/parallax.min.js'
+		'app/libs/parallax/parallax.min.js'
 		])
 		.pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
 		.pipe(uglify()) // Сжимаем JS файл
