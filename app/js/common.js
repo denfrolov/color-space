@@ -1,6 +1,4 @@
 (function ($) {
-    //Запуск параллакса
-    $('.parallax-window').parallax({imageSrc: 'img/parallax1.jpg'});
 
     //Запуск карусели
     $(document).ready(function(){
@@ -15,8 +13,11 @@
                 items: 3
             }
         }
-      });
+    });
   });
+
+     //Запуск параллакса
+     $('.parallax-window').parallax({imageSrc: 'img/parallax1.jpg'});
 
     //Фиксация верхнего меню при скролле
     $(document).ready(function() {
@@ -33,11 +34,11 @@
     });
 
             // Magnific Popup - эффект увеличения картинок при клике
-        $('a[href$="jpg"], a[href$="png"], a[href$="jpeg"]').magnificPopup({
-            type: 'image',
-            closeOnContentClick: true,
-            closeBtnInside: false,
-            fixedContentPos: true,
+            $('a[href$="jpg"], a[href$="png"], a[href$="jpeg"]').magnificPopup({
+                type: 'image',
+                closeOnContentClick: true,
+                closeBtnInside: false,
+                fixedContentPos: true,
         mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
         image: {
             verticalFit: true
@@ -47,4 +48,4 @@
             duration: 300 // don't foget to change the duration also in CSS
         }
     });
-})(jQuery);
+        })(jQuery);
