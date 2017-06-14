@@ -2,104 +2,129 @@ doctype html
 html(lang='ru')
 	head
 		meta(charset='UTF-8')
-		meta(name="viewport", content="width=device-width, initial-scale=1")
+		meta(name='viewport', content='width=device-width, initial-scale=1')
 		title Document
 		link(rel='stylesheet', href='css/libs.min.css')
 		link(rel='stylesheet', href='css/main.css')
 	body
-		header
-			nav.navbar.navbar-default.navbar-fixed-top.default( role="navigation" )
+		nav.navbar.navbar-default.navbar-fixed-top( role="navigation" )
+			.navbar-header
+				button.navbar-toggle.collapsed( type="button", data-toggle="collapse", data-target="#navbar-inverse", aria-expanded="false", aria-controls="navbar")
+					span.sr-only Toggle navigation
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+			#navbar-inverse.collapse.navbar-collapse
+				ul.nav.navbar-nav
+					li: a( href="#onas") О нас
+					li: a( href="#uslugi" ) Услуги и цены
+					li: a( href="#portfolio" ) Портфолио
+					li: a( href="#kontakty" ) Контакты
+		section.onas
+			.container
+				a(id='onas')
+					h2 О нас
+						br
+						i.fa.fa-chevron-down(aria-hidden='true')
+			.parallax-window
 				.container
-					.navbar-header
-						button.navbar-toggle.collapsed( type="button", data-toggle="collapse", data-target="#navbar-inverse", aria-expanded="false", aria-controls="navbar")
-							span.sr-only Toggle navigation
-							span.icon-bar
-							span.icon-bar
-							span.icon-bar
-					#navbar-inverse.collapse.navbar-collapse.navbar-right
-						ul.nav.navbar-nav
-							li: a( href="#") Главная
-							li: a( href="#about" ) Услуги
-							li: a( href="#contact" ) Цены
-							li: a( href="#contact" ) Контакты
+					p.
+						Мы молодая группа дизайнеров и программистов, у нас нет директора, замдиректора, секретаря и мы не снимаем офис, поэтому у нас ДЁШЕВО! Вы заказываете нам сайт или Landing Page...
+		section.uslugi
 			.container
-				.row
-					.col-sm-6
-						a(href='/')
-							img(src='img/logo.png', alt='Портфолио Дениса Фролова')
-					.col-sm-6
-						.div-social
-							.social
-								a(href='https://vk.com/denisfrolov86', target='_blank')
-									img(src='img/social/vk.png', alt='')
-								a(href='https://ok.ru/profile/573726782099', target='_blank')
-									img(src='img/social/ok.png', alt='')
-								a(href='https://www.facebook.com/profile.php?id=100002212612913', target='_blank')
-									img(src='img/social/fb.png', alt='')
-								a(href='https://vk.com/denisfrolov86', target='_blank')
-									img(src='img/social/tw.png', alt='')
-
-				h1 Последние работы
-				.owl-carousel.owl-theme
-					.col
-						img(src='img/brauser-top.png')
-						a(href='img/carusel/1.png')
-							img(src='img/carusel/1.png')
-						img(src='img/brauser-bottom.png')
-					.col
-						img(src='img/brauser-top.png')
-						a(href='img/carusel/2.png')
-							img(src='img/carusel/2.png')
-						img(src='img/brauser-bottom.png')
-					.col
-						img(src='img/brauser-top.png')
-						a(href='img/carusel/3.png')
-							img(src='img/carusel/3.png')
-						img(src='img/brauser-bottom.png')
-					.col
-						img(src='img/brauser-top.png')
-						a(href='img/carusel/1.png')
-							img(src='img/carusel/1.png')
-						img(src='img/brauser-bottom.png')
-		section.parallax-window
+				a(id='uslugi')
+					h2 Услуги и цены
+						br
+						i.fa.fa-chevron-down(aria-hidden='true')
+			.parallax-window
+				.container
+					ul
+						li Продвижение сайта по позициям
+						li Продвижение сайтов с оплатой за результат
+						li Продвижение сайта с оплатой за трафик
+						li Поисковая оптимизация сайтов
+		section.portfolio
 			.container
-				.row
-					.col-md-4
-						figure.box
-							h2 Создание сайтов
-							img(src='img/html_css.jpg').pull-left.thumbnail
-							p.
-								Разрабатываю сайты любой сложности, от сайтов визиток до интернет-магазинов. Использую в работе адаптивную, кроссбраузерную                                   верстку, при которой сайт будет удобно просматриваться на любом устройстве, включая смартфоны и планшеты. Использую самые                                     новейшие технологии (html5, css3, Jquary).
-							div.bt
-								a(href='/').btn Подробнее
-					.col-md-4
-						figure.box
-							h2 Продвижение сайтов
-							img(src='img/seo.jpg').pull-left.thumbnail
-							p.
-								Огромную роль играет продвижение сайта. От этого фактора зависит прибыль вашего проекта. В первую очередь важна seo оптимизация                               . Если к этому вопросу подойти максимально ответственно, то продвигаемый сайт будет отображаться на первых позициях поисковых                                 систем. Хорошо раскрученный сайт может приносить большую прибыль его владельцу.
-							div.bt
-								a(href='/').btn Подробнее
-					.col-md-4
-						figure.box
-							h2 Наполнение сайтов
-							img(src='img/content.jpg').pull-left.thumbnail
-							p.
-								Ни что не стоит на месте. Так же и сайт требует регулярного обновления (добавление новых статей, изменение дизайна). Сайт должен развиваться параллельно вашему проекту.
-							div.bt
-								a(href='/').btn Подробнее
-
+				a(id='portfolio')
+					h2 Портфолио
+						br
+						i.fa.fa-chevron-down(aria-hidden='true')
+			.fon
+				.box
+					.fotorama(data-width='100%', data-nav='false', data-ratio="800/470" data-loop='true')
+						div.slide
+							.row
+								.col-xs-6
+									img(src='http://lorempixel.com/400/400/')
+								.col-xs-6
+									img(src='http://lorempixel.com/400/400/')
+								.col-xs-6
+									img(src='http://lorempixel.com/400/400/')
+								.col-xs-6
+									img(src='http://lorempixel.com/400/400/')
+						div.slide
+							.row
+								.col-xs-6
+									img(src='http://lorempixel.com/400/400/')
+								.col-xs-6
+									img(src='http://lorempixel.com/400/400/')
+								.col-xs-6
+									img(src='http://lorempixel.com/400/400/')
+								.col-xs-6
+									img(src='http://lorempixel.com/400/400/')
+						div.slide
+							.row
+								.col-xs-6
+									img(src='http://lorempixel.com/400/400/')
+								.col-xs-6
+									img(src='http://lorempixel.com/400/400/')
+								.col-xs-6
+									img(src='http://lorempixel.com/400/400/')
+								.col-xs-6
+									img(src='http://lorempixel.com/400/400/')
+		section.kontakty
+			.container
+				a(id='kontakty')
+					h2 Контакты
+						br
+						i.fa.fa-chevron-down(aria-hidden='true')
+			.parallax-window
+				h3 Обратная связь
+				form
+					input(type='text', placeholder='Имя')
+					br
+					input(type='email', placeholder='Почта')
+					br
+					input(type='text', placeholder='Имя')
+					br
+					textarea(placeholder='Сообщение')
+					br
+					input(type='submit', value='Отправить')
+				.adres-phone
+					p.
+						Телефоны:<br>
+						8-977-333-55-30<br>
+						8-977-333-55-25
+					p.
+						Почта:<br>
+						email@mail.ru
+					p.
+						Skype:<br>
+						skype777
+					p.
+						Адресс:<br>
+						г. Москва, ул. Пушкина, д. Колотушкина
+				.karta
+					iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.37294994423!2d37.61531071560142!3d55.75202328055311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a50b315e573%3A0xa886bf5a3d9b2e68!2z0JzQvtGB0LrQvtCy0YHQutC40Lkg0JrRgNC10LzQu9GM!5e0!3m2!1sru!2sru!4v1496798764112', width='400', height='300', frameborder='0', style='border:0', allowfullscreen='')
 		footer
-			.container
-				.row
-					.col-md-6
-						h2 Контактная информация
-						p.
-							Здесь будет какая-то полезная информация
-
-					.col-md-6
+			p
+				i.fa.fa-copyright(aria-hidden='true')
+				|	Все права защищены
 
 
-		script(src='libs/jquery/dist/jquery.min.js')
+
+
+
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
 		script(src='js/libs.min.js')
 		script(src='js/common.js')

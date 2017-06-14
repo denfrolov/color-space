@@ -40,14 +40,13 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 
 gulp.task('scripts', function() {
 	return gulp.src([ // Берем все необходимые библиотеки
-		'app/libs/bootstrap/js/bootstrap.min.js',
 		'app/libs/scroll.js',
-		'app/libs/owl.carousel/dist/owl.carousel.min.js',
-		'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
-		'app/libs/parallax/parallax.min.js'
+		'app/libs/bootstrap/js/bootstrap.min.js',
+		'app/libs/parallax/parallax.min.js',
+		'app/libs/fotorama/fotorama.js'
 		])
 		.pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
-		//.pipe(uglify()) // Сжимаем JS файл
+		.pipe(uglify()) // Сжимаем JS файл
 		.pipe(gulp.dest('app/js')); // Выгружаем в папку app/js
 });
 

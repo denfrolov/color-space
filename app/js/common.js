@@ -1,51 +1,23 @@
-(function ($) {
+;
+(function ( $, window, document, undefined ) {
+	$('.onas .parallax-window').parallax({imageSrc: 'img/parallax1.jpg'});
+	$('.uslugi .parallax-window').parallax({imageSrc: 'img/parallax2.jpg'});
+	$('.kontakty .parallax-window').parallax({imageSrc: 'img/parallax3.jpg'});
 
-    //Запуск карусели
-    $(document).ready(function(){
-      $('.owl-carousel').owlCarousel({
-        loop: true,
-        smartSpeed: 700,
-        responsive: {
-            0: {
-                items: 1
-            },
-            768: {
-                items: 3
-            }
-        }
-    });
-  });
+	$(document).ready(function(){
+	$(".navbar-nav").on("click","a", function (event) {
+		//отменяем стандартную обработку нажатия по ссылке
+		event.preventDefault();
 
-     //Запуск параллакса
-     $('.parallax-window').parallax({imageSrc: 'img/parallax1.jpg'});
+		//забираем идентификатор бока с атрибута href
+		var id  = $(this).attr('href'),
 
-    //Фиксация верхнего меню при скролле
-    $(document).ready(function() {
-        var $menu = $(".navbar");
-        var fn = 40;
+		//узнаем высоту от начала страницы до блока на который ссылается якорь
+			top = $(id).offset().top;
+		
+		//анимируем переход на расстояние - top за 1500 мс
+		$('body,html').animate({scrollTop: top-15}, 500);
+	});
+});
 
-        $(window).scroll(function() {
-            if ($(this).scrollTop() > fn && $menu.hasClass("default")) {
-                $menu.removeClass("default").addClass("fixed");
-            } else if ($(this).scrollTop() <= fn && $menu.hasClass("fixed")) {
-                $menu.removeClass("fixed").addClass("default");
-            }
-        }); //scroll
-    });
-
-            // Magnific Popup - эффект увеличения картинок при клике
-            $('a[href$="jpg"], a[href$="png"], a[href$="jpeg"]').magnificPopup({
-                type: 'image',
-                closeOnContentClick: true,
-                closeBtnInside: false,
-                fixedContentPos: true,
-        mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
-        image: {
-            verticalFit: true
-        },
-        zoom: {
-            enabled: true,
-            duration: 300 // don't foget to change the duration also in CSS
-        }
-    });
-        })(jQuery);
+}(jQuery, window, document));
