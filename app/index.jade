@@ -29,7 +29,7 @@ html(lang='ru')
 			.parallax-window
 				.container
 					p.
-						Мы молодая группа дизайнеров и программистов, у нас нет директора, замдиректора, секретаря и мы не снимаем офис, поэтому у нас ДЁШЕВО! Вы заказываете нам сайт или Landing Page...
+						Мы молодая группа профессиональных дизайнеров и программистов в области веб-технологий. Являемся энтузиастами своего дела. Работы выполняем не позже оговоренных сроков. Качество и изящность - кредо нашего коллектива. А цены за наши услуги Вас приятно удивят и порадуют...
 		section.uslugi
 			.container
 				a(id='uslugi')
@@ -38,11 +38,32 @@ html(lang='ru')
 						i.fa.fa-chevron-down(aria-hidden='true')
 			.parallax-window
 				.container
-					ul
-						li Продвижение сайта по позициям
-						li Продвижение сайтов с оплатой за результат
-						li Продвижение сайта с оплатой за трафик
-						li Поисковая оптимизация сайтов
+					table.table
+						tr
+							td.
+								Создать сайт визитку
+							td.
+								От 2 000 р.
+						tr
+							td.
+								Создать Landing Page
+							td.
+								От 5 000 р.
+						tr
+							td.
+								Создать Интернет магазин
+							td.
+								От 10 000 р.
+						tr
+							td.
+								Сео-оптимизация контента (разово)
+							td.
+								От 5 000 р.
+						tr
+							td.
+								Рекламная компания (продвижение)
+							td.
+								От 5 000 р. / мес.
 		section.portfolio
 			.container
 				a(id='portfolio')
@@ -55,33 +76,19 @@ html(lang='ru')
 						div.slide
 							.row
 								.col-xs-6
-									img(src='http://lorempixel.com/400/400/')
+									img(src='img/portfolio/1.jpg')
 								.col-xs-6
-									img(src='http://lorempixel.com/400/400/')
+									img(src='img/portfolio/2.jpg')
 								.col-xs-6
-									img(src='http://lorempixel.com/400/400/')
+									img(src='img/portfolio/3.jpg')
 								.col-xs-6
-									img(src='http://lorempixel.com/400/400/')
+									img(src='img/portfolio/4.jpg')
 						div.slide
 							.row
 								.col-xs-6
-									img(src='http://lorempixel.com/400/400/')
+									img(src='img/portfolio/5.jpg')
 								.col-xs-6
-									img(src='http://lorempixel.com/400/400/')
-								.col-xs-6
-									img(src='http://lorempixel.com/400/400/')
-								.col-xs-6
-									img(src='http://lorempixel.com/400/400/')
-						div.slide
-							.row
-								.col-xs-6
-									img(src='http://lorempixel.com/400/400/')
-								.col-xs-6
-									img(src='http://lorempixel.com/400/400/')
-								.col-xs-6
-									img(src='http://lorempixel.com/400/400/')
-								.col-xs-6
-									img(src='http://lorempixel.com/400/400/')
+									img(src='img/portfolio/6.jpg')
 		section.kontakty
 			.container
 				a(id='kontakty')
@@ -89,33 +96,34 @@ html(lang='ru')
 						br
 						i.fa.fa-chevron-down(aria-hidden='true')
 			.parallax-window
-				h3 Обратная связь
-				form
-					input(type='text', placeholder='Имя')
-					br
-					input(type='email', placeholder='Почта')
-					br
-					input(type='text', placeholder='Имя')
-					br
-					textarea(placeholder='Сообщение')
-					br
-					input(type='submit', value='Отправить')
-				.adres-phone
-					p.
-						Телефоны:<br>
-						8-977-333-55-30<br>
-						8-977-333-55-25
-					p.
-						Почта:<br>
-						email@mail.ru
-					p.
-						Skype:<br>
-						skype777
-					p.
-						Адресс:<br>
-						г. Москва, ул. Пушкина, д. Колотушкина
-				.karta
-					iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.37294994423!2d37.61531071560142!3d55.75202328055311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a50b315e573%3A0xa886bf5a3d9b2e68!2z0JzQvtGB0LrQvtCy0YHQutC40Lkg0JrRgNC10LzQu9GM!5e0!3m2!1sru!2sru!4v1496798764112', width='400', height='300', frameborder='0', style='border:0', allowfullscreen='')
+				.container
+					h3 Обратная связь
+					form
+						input(type='text', placeholder='Имя')
+						br
+						input(type='email', placeholder='Почта')
+						br
+						input(type='text', placeholder='Телефон')
+						br
+						textarea(placeholder='Сообщение')
+						br
+						input(type='submit', value='Отправить')
+					.adres-phone
+						p.
+							Телефоны:<br>
+							8-977-333-55-30<br>
+							8-977-333-55-25
+						p.
+							Почта:<br>
+							mail@color-space.ru
+						p.
+							Skype:<br>
+							color-space
+						p.
+							Адрес:<br>
+							г. Москва, ул. Савельева, д. 7
+					.karta
+						iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.37294994423!2d37.61531071560142!3d55.75202328055311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a50b315e573%3A0xa886bf5a3d9b2e68!2z0JzQvtGB0LrQvtCy0YHQutC40Lkg0JrRgNC10LzQu9GM!5e0!3m2!1sru!2sru!4v1496798764112', width='100%', height='300', frameborder='0', style='border:0', allowfullscreen)
 		footer
 			p
 				i.fa.fa-copyright(aria-hidden='true')
